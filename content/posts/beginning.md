@@ -55,14 +55,16 @@ $ hugo
 $ ls public/
 ```
 
-Although, GitHub Pages wants things in `docs/`. Let's avoid the Submodule
-example in [Hosting on
+So, GitHub Pages refuses to allow anything but a flat structure for User
+Pages sites. I guess we're going to follow the submodule `public/` model in
+[Hosting on
 GitHub](https://gohugo.io/hosting-and-deployment/hosting-on-github/).
 
 ```bash
 $ rm -r public/
-$ echo 'publishDir = "docs" >> config.toml'
+$ git submodule add -- git@github.com:e4r7hbug/e4r7hbug.github.io.git public
 $ hugo
+$ cd public/
 $ git add .
 $ git commit -v  # Same as --verbose
 $ git push
