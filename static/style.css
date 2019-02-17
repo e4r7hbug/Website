@@ -1,0 +1,15 @@
+.post-date {
+    font-weight: bold;
+}
+
+.post-date-modified {
+    font-size: smaller;
+}
+
+.post-date-modified::before {
+    content: "(";
+}
+
+.post-date-modified::after {
+    content: ")";
+}

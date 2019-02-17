@@ -2,6 +2,8 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "e4r7hbug"
 
+enableGitInfo = true
+
 theme = "terminal"
 
 [languages.en]
@@ -12,3 +14,6 @@ theme = "terminal"
 
     [params.logo]
         logoText = "e4r7hbug"
+
+[frontmatter]
+    lastmod = [":git"]
