@@ -3,4 +3,4 @@
 	url = https://github.com/panr/hugo-theme-terminal.git
 [submodule "public"]
 	path = public
-	url = ./public/
+	url = git@github.com:e4r7hbug/e4r7hbug.github.io.git
