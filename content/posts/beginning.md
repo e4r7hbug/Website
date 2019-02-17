@@ -1,7 +1,7 @@
 ---
 title: "Beginning"
 date: 2019-02-13T23:36:55-08:00
-draft: true
+draft: false
 ---
 
 # Notes
