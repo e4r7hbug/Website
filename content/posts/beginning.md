@@ -139,9 +139,11 @@ $ ls output/
 
 Hm…not sure how to switch to `docs/`.
 
-## General Notes
+# Ending Thoughts
 
 * It seems like everyone wants to show off how fast they with those compile
   times in the server logs
+
   * Hugo is fastest < Jekyll < Nikola is slowest
+
 * GitHub Pages has some tight integration with Jekyll
