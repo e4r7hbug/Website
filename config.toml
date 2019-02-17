@@ -1,5 +1,14 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "e4r7hbug"
 
 theme = "terminal"
+
+[languages.en]
+    subtitle = "Trails of thoughts."
+
+[params]
+    themeColor = "green"
+
+    [params.logo]
+        logoText = "e4r7hbug"
