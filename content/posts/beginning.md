@@ -16,7 +16,7 @@ generators I'm deciding on.
 
 ## Hugo
 
-I decided to forgoe the prepackaged binary for the fun of using `go get`. I
+I decided to forgo the prepackaged binary for the fun of using `go get`. I
 like to think that I can see all the text scroll by and understand what's
 really happening. That new site builder and web server feel super fast!
 
