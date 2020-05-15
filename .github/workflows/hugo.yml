@@ -20,7 +20,9 @@ jobs:
         path: public
 
     - name: Install Hugo
-      run: sudo apt install -y hugo
+      run: |
+        wget https://github.com/gohugoio/hugo/releases/download/v0.70.0/hugo_0.70.0_Linux-64bit.deb
+        sudo dpkg --install hugo_0.70.0_Linux-64bit.deb
 
     - name: Generate Hugo site into public/
       run: hugo
