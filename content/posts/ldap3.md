@@ -1,12 +1,12 @@
 +++
 title = "Using The Python ldap3 Package"
-date = ""
+date = 2020-05-14
 author = ""
 authorTwitter = "" #do not include @
 cover = ""
-tags = ["", ""]
-keywords = ["", ""]
-description = ""
+tags = ["ad", "ldap", "python"]
+keywords = ["active directory", "ldap3", "python"]
+description = "Example of getting a list of Groups with a specific member."
 showFullContent = false
 +++
 
