@@ -34,8 +34,8 @@ jobs:
     - name: Push site to https://github.com/e4r7hbug/e4r7hbug.github.io
       run: |
         cd public/
-        git config user.email 'actions@https://github.com/e4r7hbug/website'
-        git config user.name 'https://github.com/e4r7hbug/website'
+        git config user.email 'github-actions@e4r7hbug.com'
+        git config user.name 'GitHub Actions'
         git add .
         git commit --message='Deployed from https://github.com/e4r7hbug/website'
         git push
