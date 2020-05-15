@@ -10,6 +10,8 @@ theme = "terminal"
     subtitle = "Trails of thoughts."
 
 [params]
+    centerTheme = true
+    fullWidthTheme = true
     themeColor = "green"
 
     [params.logo]
