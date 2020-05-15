@@ -1,0 +1,35 @@
+name: Hugo publish
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/checkout@v2
+      with:
+        repository: e4r7hbug/e4r7hbug.github.io
+        token: ${{ secrets.ACCESS_TOKEN }}
+        path: public
+
+    - name: Install Hugo
+      run: sudo apt install -y hugo
+
+    - name: Generate Hugo site into public/
+      run: hugo
+
+    - name: Push site to https://github.com/e4r7hbug/e4r7hbug.github.io
+      run: |
+        cd public/
+        git config user.email 'actions@https://github.com/e4r7hbug/website'
+        git config user.name 'https://github.com/e4r7hbug/website'
+        git add .
+        git commit --message='Deployed from https://github.com/e4r7hbug/website'
+        git push
