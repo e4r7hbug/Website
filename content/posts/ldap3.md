@@ -25,6 +25,18 @@ matching your Active Directory (AD) Group.
 He was trying to query the Okta LDAP endpoint for a list of Groups that a User
 belongs to.
 
+The initial query tested only gave back Users without information about what
+Groups they are members of. We figured out that setting [optional
+attributes](https://ldap3.readthedocs.io/en/latest/schema.html#operational-attributes)
+would add the Group membership details with `attributes='memberOf'`. This
+wasn't ideal because he wasn't sure we would have access to modify the global
+configuration parameters as in the example.
+
+The second query took an exorbitant amount of time to execute. This was
+probably caused by searching with `attributes='*'` to get back all possible
+attributes associated with a User. It might be the Module needing to do
+subsequent searches for each object returned.
+
 ## Solution
 
 Once I installed [Apache Directory](https://directory.apache.org/studio/), I
